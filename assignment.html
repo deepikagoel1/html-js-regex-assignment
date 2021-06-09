@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_on_Js</title>
+    <style rel="stylesheet" src = "style.css"></style>
+</head>
+<body>
+    <fieldset id="fr">
+        <legend> <h1>Find and Replace text</h1> </legend>
+        <table>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dtext"> Enter text  &emsp;</label>
+                </td>
+                <td>: &emsp;</td>
+                <td>
+                    <input type="text" id="dtext" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="replacew">Enter word to replace  &emsp;</label>
+                </td>
+                <td>: &emsp;</td>
+                <td>
+                    <input type="text" id="replacew" name="replacew" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="replace_with">Enter word to replaced with  &emsp;</label>
+                </td>
+                <td>: &emsp;</td>
+                <td>
+                    <input type="text" id="replace_with" name="replace_with" required/>
+                </td>
+            </tr>
+        </table>
+        <button class="replace" onclick = "treplace()" > submit </button>
+    </fieldset>
+    <fieldset>
+        <legend><h1>Calculate Bill Amount </h1></legend>
+        <form id="form" action="" onsubmit = "billCalculate(); return false">
+            <table>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="inp">Enter number of calls  &emsp;</label>
+                    </td>
+                    <td>: &emsp;</td>
+                    <td>
+                        <input type="text" id="inp" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="sms">Enter SMS  &emsp;</label>
+                    </td>
+                    <td>: &emsp;</td>
+                    <td>
+                        <input type="text" id="sms" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="calout">Charges for calls  &emsp;</label>
+                    </td>
+                    <td>: &emsp;</td>
+                    <td>
+                        <p id="calout"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="smsout">SMS Charges  &emsp;</label>
+                    </td>
+                    <td>: &emsp;</td>
+                    <td>
+                        <p id="smsout"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="total">Total Charges  &emsp;</label>
+                    </td>
+                    <td>: &emsp;</td>
+                    <td>
+                        <p id="total"></p>
+                    </td>
+                </tr>
+            </table>
+            <button>submit</button>
+        </form>    
+    </fieldset>
+
+
+<script src="bill.js"></script>
+<script src="replace.js"></script>
+</body>
+</html>
